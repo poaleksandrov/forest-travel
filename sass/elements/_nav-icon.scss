@@ -1,0 +1,91 @@
+$lineHeight: 4px;
+$width: 32px;
+$height: $lineHeight * 5;
+
+
+.nav-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $width;
+    height: $height;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.nav-icon--active {
+    position: fixed;
+}
+
+.header .nav-icon--active {
+    top: 32px;
+    right: 8px;
+
+    // Mobile XS
+    @media (max-width: 599px) {
+        top: 30px;
+        right: 10px;
+    }
+    
+}
+
+.header-inner .nav-icon--active {
+    right: 8px;
+    top: 20px;
+
+    // Mobile
+    @media (max-width: 899px) {
+        top: 15px;
+        right: 15px;
+    }
+
+    // Mobile XS
+    @media (max-width: 599px) {
+        right: 10px;
+    }
+}
+
+.nav-icon__middle {
+    position: relative;
+    width: $width;
+    height: $lineHeight;
+    background-color: #fff;
+    border-radius: 4px;
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: $width;
+        height: $lineHeight;
+        border-radius: 4px;
+        background-color: #fff;
+        transition: transform 0.1s ease-in, top 0.1s linear 0.1s;
+    }
+
+    &::before {
+        top: -($lineHeight * 2);
+    }
+
+    &::after {
+        top: ($lineHeight * 2);
+    }
+}
+
+.nav-icon--active{
+    background-color: transparent;
+
+    &::before, &::after {
+        top: 0;
+        transition: top 0.1s linear, transform 0.1s ease-in 0.1s;
+    }
+
+    &::before {
+        transform: rotate(45deg); 
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}

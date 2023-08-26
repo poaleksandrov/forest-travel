@@ -1,0 +1,35 @@
+a .logo, .logo--footer {
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.header .logo {
+    // Mobile XS
+    @media (max-width: 599px) {
+        font-size: 30px;
+    }
+}
+
+.header-inner .logo {
+    // Mobile
+    @media (max-width: 899px) {
+        font-size: 30px;
+    }
+}
+
+.inner-page a .logo {
+    // Mobile
+    @media (max-width: 899px) {
+        font-size: 30px;
+    }
+}
+
+
+
+.logo--footer {
+    // Tablet
+    @media (max-width: 1199px) {
+        font-size: 30px;
+    }
+}

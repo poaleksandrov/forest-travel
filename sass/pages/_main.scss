@@ -1,0 +1,140 @@
+.main {
+    padding: 120px 0;
+
+    & .container {
+        // Mobile XS
+        @media (max-width: 599px) {
+            width: 100%;
+        }
+    }
+
+    // Tablet
+    @media (max-width: 1199px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    // Mobile
+    @media (max-width: 899px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    // Mobile XS
+    @media (max-width: 599px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.article {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+
+        // Mobile XS
+        @media (max-width: 599px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    // Tablet
+    @media (max-width: 1199px) {
+        margin-bottom: 80px;
+    }
+
+    // Mobile
+    @media (max-width: 899px) {
+        flex-direction: row-reverse;
+        margin-bottom: 60px;
+    }
+
+    // Mobile XS
+    @media (max-width: 599px) {
+        flex-direction: column-reverse;
+        margin-bottom: 40px;
+    }
+}
+
+.article__content {
+    width: 470px;
+
+    // Tablet
+    @media (max-width: 1199px) {
+        width: 420px;
+    }
+
+    // Mobile
+    @media (max-width: 899px) {
+        width: auto;
+    }
+}
+
+.article__header {
+    margin-bottom: 20px;
+}
+
+.article__content-text {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 1.6;
+
+
+    & a {
+        color: #138ECE;
+    }
+
+    // Tablet
+    @media (max-width: 1199px) {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    // Mobile
+    @media (max-width: 899px) {
+        font-size: 16px;
+    }
+}
+
+.arcticle__img {
+    width: 570px;
+
+    & img {
+        // Mobile
+        @media (max-width: 899px) {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // Tablet
+    @media (max-width: 1199px) {
+        width: 420px;
+    }
+
+    // Mobile
+    @media (max-width: 899px) {
+        margin-right: 30px;
+        width: 170px;
+        flex-shrink: 0;
+    }
+
+    // Mobile XS
+    @media (max-width: 599px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: auto;
+        height: 150px;
+    }
+
+    
+}
+

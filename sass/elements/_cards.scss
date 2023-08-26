@@ -1,0 +1,127 @@
+.card {
+    width: 570px;
+
+    &:hover {
+        opacity: 90%;
+    }
+
+    // Tablet
+    @media (max-width: 1199px) {
+        width: 420px;
+    }
+
+    // Mobile
+    @media (max-width: 899px) {
+        width: 570px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    // Mobile XS
+    @media (max-width: 599px) {
+        width: 290px;
+    }
+}
+
+.card.card--bigger {
+    width: 670px;
+
+    // Tablet
+    @media (max-width: 1199px) {
+        width: 495px;
+    }
+
+    // Mobile
+    @media (max-width: 899px) {
+        width: 570px;
+    }
+
+    // Mobile XS
+    @media (max-width: 599px) {
+        width: 290px;
+    }
+}
+
+.card.card--small {
+    width: 470px;
+
+    // Tablet
+    @media (max-width: 1199px) {
+        width: 345px;
+    }
+
+    // Mobile
+    @media (max-width: 899px) {
+        width: 570px;
+    }
+
+    // Mobile XS
+    @media (max-width: 599px) {
+        width: 290px;
+    }
+}
+
+.card__title-wrapper {
+    display: flex;
+    align-items: center;
+    
+    height: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #A6A6A6;
+    color: #fff;
+
+    // Tablet
+    @media (max-width: 1199px) {
+        height: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    // Mobile
+    @media (max-width: 899px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    // Mobile XS
+    @media (max-width: 599px) {
+        height: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.card--extreme-color .card__title-wrapper{
+    background-color: #C1B19B;
+}
+
+.card--adventure-color .card__title-wrapper{
+    background-color: #66B0BE;
+}
+
+.card--trekking-color .card__title-wrapper{
+    background-color: #876F56;
+}
+
+.card--exotic-color .card__title-wrapper{
+    background-color: #27695E;
+}
+
+.card__title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 28px;
+    font-weight: 700;
+
+    // Tablet
+    @media (max-width: 1199px) {
+        font-size: 24px;
+    }
+
+    // Mobile XS
+    @media (max-width: 599px) {
+        font-size: 20px;
+    }
+}

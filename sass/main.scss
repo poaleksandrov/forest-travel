@@ -1,0 +1,26 @@
+
+// Base
+@import "./base/reset";
+@import "./base/base";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:wght@400;700&display=swap');
+
+// Blocks
+@import "./elements/header";
+@import "./elements/nav";
+@import "./elements/nav-icon";
+@import "./elements/logo";
+@import "./elements/buttons";
+@import "./elements/title";
+@import "./elements/cards";
+@import "./elements/forms";
+@import "./elements/radio";
+@import "./elements/checkboxes";
+@import "./elements/footer";
+
+// Pages
+@import "./pages/main";
+@import "./pages/trekking_page";
+@import "./pages/tours_page";
+@import "./pages/contacts_page";
